@@ -27,12 +27,12 @@ const Footer = () => {
       <div className="column">
         <h4>CATEGORIES</h4>
         <ul>
-          <li><Link to="/hydraulic">Hydraulic</Link></li>
-          <li><Link to="/atomtronics">Atomtronics</Link></li>
-          <li><Link to="/cryotronics">Cryotronics</Link></li>
-          <li><Link to="/induction">Induction</Link></li>
-          <li><Link to="/spintronics">Spintronics</Link></li>
-          <li><Link to="/pro-electron">Pro Electron</Link></li>
+        <li><Link to="/category/laptops">Laptops</Link></li>
+      <li><Link to="/category/Accessories">Accessories</Link></li>
+      <li><Link to="/category/home-decoration">Home decoration</Link></li>
+      <li><Link to="/category/groceries">Groceries</Link></li>
+      <li><Link to="/category/skincare">Skincare</Link></li>
+      <li><Link to="/category/fragrances">Fragrances</Link></li>
         </ul>
       </div>
 

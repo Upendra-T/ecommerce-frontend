@@ -7,15 +7,16 @@ const Sidenav = () => {
     <div className="sidebar">
       <h2>ALL CATEGORIES</h2>
       <ul>
-        <li><Link to="/category/Accessories">Accessories</Link></li>
-        <li><Link to="/category/Hydraulic">Hydraulic</Link></li>
-        <li><Link to="/category/Lamp">Lamp</Link></li>
-        <li><Link to="/category/Cryotronics">Cryotronics</Link></li>
-        <li><Link to="/category/Induction">Induction</Link></li>
-        <li><Link to="/category/Avionics">Avionics</Link></li>
-        <li><Link to="/category/Circuits">Circuits</Link></li>
-        <li><Link to="/category/Electronics">Electronics</Link></li>
-        <li><Link to="/category/Handwatch">Handwatch</Link></li>
+      <li><Link to="/category/all">All Categories</Link></li>
+      <li><Link to="/category/Accessories">Accessories</Link></li>
+      <li><Link to="/category/home-decoration">Home decoration</Link></li>
+      <li><Link to="/category/groceries">Groceries</Link></li>
+      <li><Link to="/category/skincare">Skincare</Link></li>
+      <li><Link to="/category/fragrances">Fragrances</Link></li>
+      <li><Link to="/category/laptops">Laptops</Link></li>
+      <li><Link to="/category/smartphones">Smartphones</Link></li>
+      <li><Link to="/category/Electronics">Electronics</Link></li>
+
       </ul>
     </div>
   );

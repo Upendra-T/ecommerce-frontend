@@ -36,12 +36,12 @@ const Header = () => {
           >
             <option value="all">All Categories</option>
             <option value="Accessories">Accessories</option>
-            <option value="Hydraulic">Hydraulic</option>
-            <option value="Lamp">Lamp</option>
-            <option value="Cryotronics">Cryotronics</option>
-            <option value="Induction">Induction</option>
-            <option value="Avionics">Avionics</option>
-            <option value="Circuits">Circuits</option>
+            <option value="home-decoration">Home decoration</option>
+            <option value="groceries">Groceries</option>
+            <option value="skincare">Skincare</option>
+            <option value="fragrances">fragrances</option>
+            <option value="laptops">Laptops</option>
+            <option value="smartphones">Smartphones</option>
             <option value="Electronics">Electronics</option>
           </select>
 
