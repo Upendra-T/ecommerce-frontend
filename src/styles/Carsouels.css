@@ -1,0 +1,21 @@
+
+.carousel {
+    margin-left: 220px; 
+    width: 700px; 
+    height: 500px; 
+    margin-top: 10px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px; 
+    color: white; 
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    margin: 0;
+}
+
+
