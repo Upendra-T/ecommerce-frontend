@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Sidenav from '../../Sidenav/Sidenav';
 import ProductDetails from './ProductDetails';
+import { FaShoppingCart, FaHeart, FaShoppingBag } from 'react-icons/fa';
+import '../../../styles/ProductList.css';
 
 const SearchedProductList = ({ category, title }) => {
   const [products, setProducts] = useState([]);
@@ -19,8 +21,6 @@ const SearchedProductList = ({ category, title }) => {
 
     fetchSearchedProducts();
   }, [category, title]);
-
- 
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
@@ -46,7 +46,19 @@ const SearchedProductList = ({ category, title }) => {
                 <img src={product.thumbnail} className="card-img-top" alt={product.title} />
                 <div className="card-body">
                   <h5 className="card-title">{product.title}</h5>
-                  <p className="card-text">{product.description}</p>
+                  <p className="card-text">
+                    ${product.price}{' '}
+                    <strike>
+                      ${(
+                        product.price - (product.price * (product.discountPercentage / 100))
+                      ).toFixed(2)}
+                    </strike>
+                  </p>
+                  <div className="product-icons">
+                    <FaShoppingCart className="icon" />
+                    <FaHeart className="icon" />
+                    <FaShoppingBag className="icon" />
+                  </div>
                 </div>
               </div>
             </div>

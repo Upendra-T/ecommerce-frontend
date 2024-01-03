@@ -28,7 +28,6 @@ const Header = () => {
           <img src="https://pixeltemplate.com/wordpress/shopeur/wp-content/themes/Shopeur/images/webi/logo.png" alt="Shopeur Logo" style={{ height: '40px', width: '100px' }} className="icontitle" />
         </Link>
         <div className="search-bar">
-          {/* Dropdown List for Categories */}
           <select
             className="categories-dropdown"
             value={searchData.category}
@@ -75,7 +74,7 @@ const Header = () => {
               <Link to="/signin" className="col-md-12 mb-4">
                 <button type="button" className="btn btn-elegant">
                   <FontAwesomeIcon icon={faUser} className="pr-2" />
-                  My Account (Signin)
+                  Sign In
                 </button>
               </Link>
              

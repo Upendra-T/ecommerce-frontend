@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn, MDBIcon,MDBCard,MDBCardBody,MDBCardImage} from "mdb-react-ui-kit";
-
+import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBCardImage } from "mdb-react-ui-kit";
 
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +12,7 @@ const SignUpForm = () => {
     address: "",
   });
   const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -27,7 +27,7 @@ const SignUpForm = () => {
     try {
       const response = await axios.post("http://localhost:8080/users/register", formData);
       console.log("User registered:", response.data);
-      alert("Registration sucessful Signin to continue");
+      alert("Registration successful. Sign in to continue");
       navigate('/');
     } catch (error) {
       console.error("Registration error:", error);
@@ -39,7 +39,7 @@ const SignUpForm = () => {
       <MDBCard className='text-black m-5' style={{ borderRadius: '25px' }}>
         <MDBCardBody>
           <MDBRow>
-            <MDBCol md='10' lg='6' className='order-2 order-lg-1 d-flex flex-column align-items-center'>
+            <MDBCol md='12' lg='12' className='order-2 order-lg-1 d-flex flex-column align-items-center'>
               <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
               <div className="d-flex flex-row align-items-center mb-4">
@@ -70,7 +70,7 @@ const SignUpForm = () => {
               <MDBBtn className='mb-4' size='lg' type="submit" onClick={handleSubmit}>Register</MDBBtn>
             </MDBCol>
 
-            <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
+            <MDBCol md='12' lg='12' className='order-1 order-lg-2 d-flex align-items-center'>
               <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp' fluid />
             </MDBCol>
           </MDBRow>

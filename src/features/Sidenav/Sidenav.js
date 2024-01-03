@@ -7,7 +7,6 @@ const Sidenav = () => {
     <div className="sidebar">
       <h2>ALL CATEGORIES</h2>
       <ul>
-      <li><Link to="/category/all">All Categories</Link></li>
       <li><Link to="/category/Accessories">Accessories</Link></li>
       <li><Link to="/category/home-decoration">Home decoration</Link></li>
       <li><Link to="/category/groceries">Groceries</Link></li>

@@ -18,13 +18,11 @@ const ResetPassword = ({ uid, token }) => {
         return;
       }
 
-      // Send a POST request to your backend to reset the password
       const response = await axios.post('http://localhost:8080/users/reset-password', {
         token,
         password,
       });
 
-      // Handle the response as needed
       setMessage(response.data.message);
     } catch (error) {
       console.error('Reset password error:', error);

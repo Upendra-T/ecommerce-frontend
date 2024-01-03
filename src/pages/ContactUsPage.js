@@ -5,7 +5,6 @@ import '../styles/Contactus.css'
 const ContactUsPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle the form submission logic here
   };
 
   return (
